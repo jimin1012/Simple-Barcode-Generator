@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>서비스 소개 | Simple Barcode Generator</title>
+  <meta name="description" content="무료 바코드/QR 코드 생성기 서비스 소개. 안전한 로컬 처리, 다양한 포맷 지원, 고해상도 출력 제공." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span>Simple</span>
+        <strong>Barcode</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#generator">생성기</a>
+        <a href="index.html#features">기능</a>
+        <a href="index.html#guide">가이드</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" data-nav-toggle>메뉴</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Service Overview</p>
+        <h1>서비스 소개</h1>
+        <p class="lead">Simple Barcode Generator는 실무에 바로 사용할 수 있는 고급 바코드/QR 코드 생성 도구입니다. 브라우저에서 즉시 생성·다운로드할 수 있으며, 다양한 바코드 표준과 QR 유형을 제공합니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="page-content">
+          <h2>미션</h2>
+          <p>누구나 쉽고 빠르게 바코드와 QR 코드를 만들 수 있도록, 복잡한 설정을 간단한 UI로 제공하는 것이 목표입니다.</p>
+
+          <h2>핵심 가치</h2>
+          <ul>
+            <li>즉시 사용: 회원가입 없이 바로 생성 및 다운로드</li>
+            <li>고품질 출력: PNG/SVG 지원으로 인쇄 품질 유지</li>
+            <li>보안: 입력 데이터는 브라우저에서만 처리</li>
+            <li>실무 기능: 배치 생성, 커스터마이징, 로고 삽입 지원</li>
+          </ul>
+
+          <h2>지원 포맷</h2>
+          <p>CODE128, EAN-13/8, UPC-A/UPC-E, Code39, ITF, MSI, Codabar, Pharmacode 등 다양한 포맷을 제공합니다. QR 코드는 URL, Wi-Fi, vCard, 이메일 등 실전 템플릿을 지원합니다.</p>
+
+          <h2>신뢰와 투명성</h2>
+          <p>서비스 운영 정책과 데이터 처리 방식은 개인정보 처리방침 및 이용약관에서 상세히 안내합니다. 문의사항은 문의 페이지를 통해 연락해 주세요.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">
+          <span>Simple</span><strong>Barcode</strong>
+        </div>
+        <p>무료 바코드/QR 코드 생성 도구. 상업적 활용을 위한 고해상도 출력과 다양한 설정을 제공합니다.</p>
+      </div>
+      <div>
+        <h4>정책</h4>
+        <ul>
+          <li><a href="privacy.html">개인정보 처리방침</a></li>
+          <li><a href="terms.html">이용약관</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Simple Barcode Generator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('[data-nav-toggle]');
+    const nav = document.querySelector('.site-nav');
+    toggle?.addEventListener('click', () => nav?.classList.toggle('is-open'));
+  </script>
+</body>
+</html>
+

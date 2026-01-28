@@ -1,0 +1,706 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>바코드 생성기 & QR 코드 생성기 | 무료 온라인 도구</title>
+  <meta name="description" content="코드128, EAN, UPC, Code39, ITF 등 다양한 바코드를 즉시 생성하고 PNG/SVG로 다운로드하세요. URL, Wi-Fi, vCard까지 지원하는 고급 QR 코드 생성기." />
+  <meta name="keywords" content="바코드 생성기, QR 코드 생성기, barcode generator, qr code generator, code128, ean13, upc, code39" />
+  <meta name="author" content="Simple Barcode Generator" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="바코드 생성기 & QR 코드 생성기" />
+  <meta property="og:description" content="무료 온라인 바코드/QR 코드 생성기. 다양한 포맷, 고급 옵션, 즉시 다운로드 지원." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-barcode.png" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="바코드 생성기 & QR 코드 생성기" />
+  <meta name="twitter:description" content="무료 온라인 바코드/QR 코드 생성기. 다양한 포맷과 다운로드 지원." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Simple Barcode Generator",
+    "url": "https://example.com/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "description": "다양한 바코드와 QR 코드를 생성하고 다운로드할 수 있는 무료 온라인 도구",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "바코드 생성기는 무료인가요?",
+        "acceptedAnswer": {"@type": "Answer", "text": "네. 회원가입 없이 무료로 사용할 수 있습니다."}
+      },
+      {
+        "@type": "Question",
+        "name": "생성한 바코드는 상업적으로 사용해도 되나요?",
+        "acceptedAnswer": {"@type": "Answer", "text": "일반적으로 생성된 이미지 자체는 자유롭게 사용할 수 있으며, 코드 표준 규정은 사용 목적에 따라 확인해 주세요."}
+      },
+      {
+        "@type": "Question",
+        "name": "어떤 바코드 포맷을 지원하나요?",
+        "acceptedAnswer": {"@type": "Answer", "text": "CODE128, EAN-13/8, UPC-A/UPC-E, Code39, ITF, MSI, Codabar, Pharmacode 등을 지원합니다."}
+      },
+      {
+        "@type": "Question",
+        "name": "QR 코드에 로고를 넣을 수 있나요?",
+        "acceptedAnswer": {"@type": "Answer", "text": "네. 로고 업로드 기능을 제공하며, 오류정정 수준을 높게 설정하면 안정성이 향상됩니다."}
+      },
+      {
+        "@type": "Question",
+        "name": "PNG와 SVG 다운로드 차이는 무엇인가요?",
+        "acceptedAnswer": {"@type": "Answer", "text": "PNG는 이미지 파일, SVG는 벡터 파일로 인쇄 품질과 크기 확장이 뛰어납니다."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="홈으로 이동">
+        <span>Simple</span>
+        <strong>Barcode</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="#generator">생성기</a>
+        <a href="#features">기능</a>
+        <a href="#guide">가이드</a>
+        <a href="#faq">FAQ</a>
+        <a href="about.html">소개</a>
+        <a href="contact.html">문의</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" data-nav-toggle>메뉴</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">무료 온라인 바코드 · QR 코드 생성기</p>
+          <h1>상업용까지 커버하는<br />고급 바코드/QR 생성기</h1>
+          <p class="lead">다양한 바코드 표준과 QR 코드 유형을 지원합니다. 색상, 크기, 오류정정, 로고, 출력 형식까지 세밀하게 조정하고 PNG/SVG로 즉시 다운로드하세요.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#generator">지금 생성하기</a>
+            <a class="btn ghost" href="#features">지원 기능 보기</a>
+          </div>
+          <div class="trust-row">
+            <span>CODE128 · EAN · UPC · QR</span>
+            <span>SVG/PNG 다운로드</span>
+            <span>실시간 미리보기</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>빠른 생성</h2>
+          <p>URL이나 상품번호를 입력하고 바로 다운로드하세요.</p>
+          <div class="hero-mini">
+            <label class="field">
+              <span>빠른 데이터 입력</span>
+              <input id="quickInput" type="text" placeholder="https://example.com 또는 8801234567890" />
+            </label>
+            <div class="hero-mini-buttons">
+              <button class="btn tiny" type="button" data-quick-barcode>바코드</button>
+              <button class="btn tiny" type="button" data-quick-qr>QR 코드</button>
+            </div>
+            <small>자동으로 생성기 섹션에 반영됩니다.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="generator" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>바코드 / QR 코드 생성기</h2>
+          <p>단일 생성부터 배치 출력까지 지원합니다. 모든 작업은 브라우저에서 처리되어 안전합니다.</p>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="barcode">바코드 생성</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="qrcode">QR 코드 생성</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="tab-panel is-active" data-panel="barcode">
+            <div class="panel-grid">
+              <div class="panel-controls">
+                <div class="mode-toggle" role="group" aria-label="생성 모드">
+                  <button class="mode-btn is-active" type="button" data-mode="barcode" data-value="single">단일 생성</button>
+                  <button class="mode-btn" type="button" data-mode="barcode" data-value="batch">배치 생성</button>
+                </div>
+
+                <div class="form-block" data-form="barcode-single">
+                  <label class="field">
+                    <span>바코드 데이터</span>
+                    <input id="barcodeValue" type="text" placeholder="예: 8801234567890" />
+                  </label>
+                </div>
+
+                <div class="form-block hidden" data-form="barcode-batch">
+                  <label class="field">
+                    <span>배치 데이터 (한 줄당 하나)</span>
+                    <textarea id="barcodeBatch" rows="6" placeholder="8801234567890\n8801234567891\n8801234567892"></textarea>
+                  </label>
+                  <label class="field">
+                    <span>파일 업로드 (CSV/TXT)</span>
+                    <input id="barcodeBatchFile" type="file" accept=".csv,.txt" />
+                  </label>
+                  <p class="hint">최대 200개까지 렌더링을 권장합니다.</p>
+                </div>
+
+                <div class="form-grid">
+                  <label class="field">
+                    <span>바코드 형식</span>
+                    <select id="barcodeFormat">
+                      <option value="CODE128" selected>CODE128 (기본)</option>
+                      <option value="CODE128A">CODE128 A</option>
+                      <option value="CODE128B">CODE128 B</option>
+                      <option value="CODE128C">CODE128 C</option>
+                      <option value="EAN13">EAN-13</option>
+                      <option value="EAN8">EAN-8</option>
+                      <option value="UPCA">UPC-A</option>
+                      <option value="UPCE">UPC-E</option>
+                      <option value="CODE39">Code39</option>
+                      <option value="ITF">ITF (Interleaved 2 of 5)</option>
+                      <option value="MSI">MSI</option>
+                      <option value="CODABAR">Codabar</option>
+                      <option value="PHARMACODE">Pharmacode</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <span>바 두께</span>
+                    <input id="barcodeWidth" type="number" min="1" max="6" step="0.5" value="2" />
+                  </label>
+                  <label class="field">
+                    <span>높이(px)</span>
+                    <input id="barcodeHeight" type="number" min="40" max="300" step="5" value="120" />
+                  </label>
+                  <label class="field">
+                    <span>여백(px)</span>
+                    <input id="barcodeMargin" type="number" min="0" max="40" step="1" value="10" />
+                  </label>
+                  <label class="field">
+                    <span>텍스트 표시</span>
+                    <select id="barcodeDisplay">
+                      <option value="true" selected>표시</option>
+                      <option value="false">숨김</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <span>텍스트 위치</span>
+                    <select id="barcodeTextPosition">
+                      <option value="bottom" selected>아래</option>
+                      <option value="top">위</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <span>폰트</span>
+                    <select id="barcodeFont">
+                      <option value="'Noto Sans KR', sans-serif" selected>Noto Sans KR</option>
+                      <option value="'Manrope', sans-serif">Manrope</option>
+                      <option value="monospace">Monospace</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <span>폰트 크기</span>
+                    <input id="barcodeFontSize" type="number" min="10" max="30" step="1" value="16" />
+                  </label>
+                  <label class="field">
+                    <span>텍스트 여백</span>
+                    <input id="barcodeTextMargin" type="number" min="0" max="20" step="1" value="4" />
+                  </label>
+                  <label class="field">
+                    <span>바 색상</span>
+                    <input id="barcodeLineColor" type="color" value="#101820" />
+                  </label>
+                  <label class="field">
+                    <span>배경 색상</span>
+                    <input id="barcodeBgColor" type="color" value="#ffffff" />
+                  </label>
+                </div>
+
+                <div class="button-row">
+                  <button class="btn primary" type="button" id="barcodeGenerate">바코드 생성</button>
+                  <button class="btn ghost" type="button" id="barcodeReset">초기화</button>
+                </div>
+
+                <div class="button-row secondary">
+                  <button class="btn tiny" type="button" id="barcodeDownloadPng">PNG 다운로드</button>
+                  <button class="btn tiny" type="button" id="barcodeDownloadSvg">SVG 다운로드</button>
+                  <button class="btn tiny" type="button" id="barcodeCopySvg">SVG 복사</button>
+                  <button class="btn tiny" type="button" id="barcodePrint">인쇄</button>
+                </div>
+                <p class="hint" id="barcodeMessage" role="status"></p>
+              </div>
+
+              <div class="panel-preview">
+                <h3>미리보기</h3>
+                <div class="preview-box" id="barcodePreview">
+                  <svg id="barcodeSvg" aria-label="바코드 미리보기" role="img"></svg>
+                </div>
+
+                <div class="preview-box hidden" id="barcodeBatchPreview"></div>
+
+                <div class="history">
+                  <h4>최근 생성 기록</h4>
+                  <ul id="barcodeHistory" class="history-list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" data-panel="qrcode">
+            <div class="panel-grid">
+              <div class="panel-controls">
+                <div class="mode-toggle" role="group" aria-label="생성 모드">
+                  <button class="mode-btn is-active" type="button" data-mode="qrcode" data-value="single">단일 생성</button>
+                  <button class="mode-btn" type="button" data-mode="qrcode" data-value="batch">배치 생성</button>
+                </div>
+
+                <div class="form-block" data-form="qr-single">
+                  <label class="field">
+                    <span>QR 데이터 유형</span>
+                    <select id="qrType">
+                      <option value="text" selected>텍스트</option>
+                      <option value="url">URL</option>
+                      <option value="email">이메일</option>
+                      <option value="phone">전화번호</option>
+                      <option value="sms">SMS</option>
+                      <option value="wifi">Wi-Fi</option>
+                      <option value="vcard">vCard</option>
+                    </select>
+                  </label>
+
+                  <div class="qr-fields" data-qr-fields="text">
+                    <label class="field">
+                      <span>텍스트</span>
+                      <textarea id="qrText" rows="4" placeholder="원하는 내용을 입력하세요"></textarea>
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="url">
+                    <label class="field">
+                      <span>URL</span>
+                      <input id="qrUrl" type="url" placeholder="https://example.com" />
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="email">
+                    <label class="field">
+                      <span>이메일</span>
+                      <input id="qrEmail" type="email" placeholder="hello@example.com" />
+                    </label>
+                    <label class="field">
+                      <span>제목</span>
+                      <input id="qrEmailSubject" type="text" placeholder="문의드립니다" />
+                    </label>
+                    <label class="field">
+                      <span>본문</span>
+                      <textarea id="qrEmailBody" rows="3" placeholder="메시지를 입력하세요"></textarea>
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="phone">
+                    <label class="field">
+                      <span>전화번호</span>
+                      <input id="qrPhone" type="tel" placeholder="01012345678" />
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="sms">
+                    <label class="field">
+                      <span>수신 번호</span>
+                      <input id="qrSmsNumber" type="tel" placeholder="01012345678" />
+                    </label>
+                    <label class="field">
+                      <span>메시지</span>
+                      <textarea id="qrSmsBody" rows="3" placeholder="보낼 메시지"></textarea>
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="wifi">
+                    <label class="field">
+                      <span>SSID</span>
+                      <input id="qrWifiSsid" type="text" placeholder="네트워크 이름" />
+                    </label>
+                    <label class="field">
+                      <span>암호</span>
+                      <input id="qrWifiPassword" type="text" placeholder="비밀번호" />
+                    </label>
+                    <label class="field">
+                      <span>보안 방식</span>
+                      <select id="qrWifiSecurity">
+                        <option value="WPA" selected>WPA/WPA2</option>
+                        <option value="WEP">WEP</option>
+                        <option value="nopass">암호 없음</option>
+                      </select>
+                    </label>
+                    <label class="field">
+                      <span>숨김 네트워크</span>
+                      <select id="qrWifiHidden">
+                        <option value="false" selected>아니오</option>
+                        <option value="true">예</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="qr-fields hidden" data-qr-fields="vcard">
+                    <label class="field">
+                      <span>이름</span>
+                      <input id="qrVcardName" type="text" placeholder="홍길동" />
+                    </label>
+                    <label class="field">
+                      <span>회사/직책</span>
+                      <input id="qrVcardOrg" type="text" placeholder="Simple Company" />
+                    </label>
+                    <label class="field">
+                      <span>전화</span>
+                      <input id="qrVcardPhone" type="tel" placeholder="01012345678" />
+                    </label>
+                    <label class="field">
+                      <span>이메일</span>
+                      <input id="qrVcardEmail" type="email" placeholder="hello@example.com" />
+                    </label>
+                    <label class="field">
+                      <span>웹사이트</span>
+                      <input id="qrVcardUrl" type="url" placeholder="https://example.com" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-block hidden" data-form="qr-batch">
+                  <label class="field">
+                    <span>배치 데이터 (한 줄당 하나)</span>
+                    <textarea id="qrBatch" rows="6" placeholder="https://example.com\nhttps://example.com/about\nhttps://example.com/contact"></textarea>
+                  </label>
+                  <label class="field">
+                    <span>파일 업로드 (CSV/TXT)</span>
+                    <input id="qrBatchFile" type="file" accept=".csv,.txt" />
+                  </label>
+                  <p class="hint">배치 모드에서는 텍스트/URL 기준으로 생성됩니다.</p>
+                </div>
+
+                <div class="form-grid">
+                  <label class="field">
+                    <span>크기(px)</span>
+                    <input id="qrSize" type="number" min="120" max="900" step="10" value="280" />
+                  </label>
+                  <label class="field">
+                    <span>여백(px)</span>
+                    <input id="qrMargin" type="number" min="0" max="20" step="1" value="4" />
+                  </label>
+                  <label class="field">
+                    <span>오류정정</span>
+                    <select id="qrError">
+                      <option value="L">L (약)</option>
+                      <option value="M" selected>M (중간)</option>
+                      <option value="Q">Q (높음)</option>
+                      <option value="H">H (최고)</option>
+                    </select>
+                  </label>
+                  <label class="field">
+                    <span>전경 색상</span>
+                    <input id="qrColorDark" type="color" value="#121212" />
+                  </label>
+                  <label class="field">
+                    <span>배경 색상</span>
+                    <input id="qrColorLight" type="color" value="#ffffff" />
+                  </label>
+                </div>
+
+                <div class="form-grid">
+                  <label class="field">
+                    <span>로고 업로드(선택)</span>
+                    <input id="qrLogo" type="file" accept="image/*" />
+                  </label>
+                  <label class="field">
+                    <span>로고 크기(%)</span>
+                    <input id="qrLogoSize" type="range" min="10" max="35" step="1" value="18" />
+                  </label>
+                  <label class="field">
+                    <span>로고 배경</span>
+                    <select id="qrLogoBg">
+                      <option value="true" selected>흰색 배경</option>
+                      <option value="false">배경 없음</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="button-row">
+                  <button class="btn primary" type="button" id="qrGenerate">QR 코드 생성</button>
+                  <button class="btn ghost" type="button" id="qrReset">초기화</button>
+                </div>
+
+                <div class="button-row secondary">
+                  <button class="btn tiny" type="button" id="qrDownloadPng">PNG 다운로드</button>
+                  <button class="btn tiny" type="button" id="qrDownloadSvg">SVG 다운로드</button>
+                  <button class="btn tiny" type="button" id="qrCopyPng">이미지 복사</button>
+                  <button class="btn tiny" type="button" id="qrPrint">인쇄</button>
+                </div>
+                <p class="hint" id="qrMessage" role="status"></p>
+              </div>
+
+              <div class="panel-preview">
+                <h3>미리보기</h3>
+                <div class="preview-box" id="qrPreview"></div>
+                <div class="preview-box hidden" id="qrBatchPreview"></div>
+
+                <div class="history">
+                  <h4>최근 생성 기록</h4>
+                  <ul id="qrHistory" class="history-list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>고급 기능 한눈에 보기</h2>
+          <p>상단 노출 웹사이트 수준의 실전 기능들을 담았습니다.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>다중 포맷 지원</h3>
+            <p>CODE128, EAN, UPC, Code39, ITF 등 상품/물류 표준을 폭넓게 지원합니다.</p>
+          </div>
+          <div class="feature-card">
+            <h3>QR 유형 템플릿</h3>
+            <p>URL, Wi-Fi, 이메일, vCard, SMS 등 실무형 QR 코드를 즉시 생성합니다.</p>
+          </div>
+          <div class="feature-card">
+            <h3>고해상도 출력</h3>
+            <p>PNG와 SVG를 모두 지원하여 인쇄·디자인 작업에서 손실 없이 활용 가능합니다.</p>
+          </div>
+          <div class="feature-card">
+            <h3>배치 생성 모드</h3>
+            <p>다량의 코드를 한 번에 만들어 프린트할 수 있어 라벨 작업이 편리합니다.</p>
+          </div>
+          <div class="feature-card">
+            <h3>커스터마이징</h3>
+            <p>색상, 크기, 여백, 텍스트 표시 여부를 자유롭게 조정하여 브랜드에 맞춥니다.</p>
+          </div>
+          <div class="feature-card">
+            <h3>로컬 처리</h3>
+            <p>모든 처리는 브라우저에서 진행됩니다. 데이터가 서버로 전송되지 않습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>바코드/QR 코드 제작 가이드</h2>
+          <p>스캔 성공률을 높이기 위해 아래 기준을 따라주세요.</p>
+        </div>
+        <div class="guide-grid">
+          <div>
+            <h3>1. 데이터 정확도 확인</h3>
+            <p>EAN/UPC는 숫자 길이와 체크디지트를 확인해야 합니다. 잘못된 길이의 데이터는 스캔 오류가 발생할 수 있습니다.</p>
+          </div>
+          <div>
+            <h3>2. 충분한 여백 확보</h3>
+            <p>바코드 주변에는 여백(quiet zone)이 필요합니다. 최소 2~4mm 이상의 여백을 유지하세요.</p>
+          </div>
+          <div>
+            <h3>3. 대비와 색상</h3>
+            <p>바코드/QR의 전경색은 어둡게, 배경색은 밝게 설정하세요. 대비가 높을수록 인식률이 향상됩니다.</p>
+          </div>
+          <div>
+            <h3>4. 인쇄 품질</h3>
+            <p>인쇄 시에는 300dpi 이상의 해상도를 권장합니다. SVG 출력은 확장에도 선명함을 유지합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="barcode-types" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>지원 바코드 유형</h2>
+          <p>상품 라벨, 물류, 도서, 의료, 제조업 등 다양한 환경에 적합한 표준을 지원합니다.</p>
+        </div>
+        <div class="type-grid">
+          <div>
+            <h4>CODE128</h4>
+            <p>영문, 숫자, 특수문자를 모두 지원하는 범용 바코드.</p>
+          </div>
+          <div>
+            <h4>EAN-13 / EAN-8</h4>
+            <p>글로벌 상품 라벨 표준으로 유통·리테일에서 사용.</p>
+          </div>
+          <div>
+            <h4>UPC-A / UPC-E</h4>
+            <p>북미 유통망 표준, 소형 패키지에는 UPC-E 권장.</p>
+          </div>
+          <div>
+            <h4>Code39</h4>
+            <p>산업용 부품 관리에 널리 사용되는 단순 구조.</p>
+          </div>
+          <div>
+            <h4>ITF (Interleaved 2 of 5)</h4>
+            <p>물류 박스/카톤 라벨에 많이 사용되는 숫자 전용 바코드.</p>
+          </div>
+          <div>
+            <h4>MSI / Codabar / Pharmacode</h4>
+            <p>재고 관리, 도서관, 헬스케어 분야에서 활용되는 전문 포맷.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>활용 사례와 베스트 프랙티스</h2>
+          <p>마케팅, 물류, 이벤트, 교육 등 어디에서나 활용 가능합니다.</p>
+        </div>
+        <div class="case-grid">
+          <div>
+            <h4>제품 포장 & 유통</h4>
+            <p>EAN/UPC 바코드를 사용해 POS 시스템과 연동하고, 재고 추적을 자동화할 수 있습니다.</p>
+          </div>
+          <div>
+            <h4>이벤트 체크인</h4>
+            <p>QR 코드로 참여자 정보를 빠르게 확인하고 입장 시간을 단축하세요.</p>
+          </div>
+          <div>
+            <h4>오프라인 마케팅</h4>
+            <p>브로슈어, 포스터에 QR 코드를 삽입해 랜딩 페이지 유입을 늘립니다.</p>
+          </div>
+          <div>
+            <h4>교육 & 도서관</h4>
+            <p>도서/자료에 바코드를 부여해 관리 효율을 높이고 분실을 줄입니다.</p>
+          </div>
+          <div>
+            <h4>매장 내 정보 제공</h4>
+            <p>제품 상세 정보, 레시피, 사용법 영상을 QR로 연결해 고객 경험을 향상합니다.</p>
+          </div>
+          <div>
+            <h4>시설 관리</h4>
+            <p>장비, 고정자산에 바코드를 부착하여 점검 이력을 간편하게 기록합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>자주 묻는 질문</h2>
+          <p>바코드/QR 코드 생성 시 자주 묻는 내용을 정리했습니다.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>바코드가 스캔되지 않을 때 어떻게 하나요?</summary>
+            <p>여백을 늘리고 대비를 높이세요. 바코드 높이를 60px 이상으로 설정하면 인식률이 좋아집니다.</p>
+          </details>
+          <details>
+            <summary>QR 코드 로고가 들어가면 인식률이 떨어지나요?</summary>
+            <p>오류정정 수준을 Q 또는 H로 설정하고 로고 크기를 20% 이하로 유지하세요.</p>
+          </details>
+          <details>
+            <summary>바코드 데이터를 보호할 수 있나요?</summary>
+            <p>바코드/QR 자체는 암호화가 아니므로 민감 정보는 넣지 않는 것을 권장합니다.</p>
+          </details>
+          <details>
+            <summary>CSV로 대량 생성이 가능한가요?</summary>
+            <p>배치 모드에서 CSV/TXT를 업로드하면 한 줄씩 자동 생성됩니다.</p>
+          </details>
+          <details>
+            <summary>모바일에서도 사용할 수 있나요?</summary>
+            <p>네. 모바일 최적화된 레이아웃으로 제공됩니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>추가 정보</h2>
+          <p>신뢰도 높은 페이지 구성을 위해 정책 페이지를 제공합니다.</p>
+        </div>
+        <div class="resource-grid">
+          <a class="resource-card" href="about.html">
+            <h3>소개</h3>
+            <p>서비스 개요와 제작 목적을 확인하세요.</p>
+          </a>
+          <a class="resource-card" href="privacy.html">
+            <h3>개인정보 처리방침</h3>
+            <p>데이터 처리와 쿠키 정책을 안내합니다.</p>
+          </a>
+          <a class="resource-card" href="terms.html">
+            <h3>이용약관</h3>
+            <p>서비스 사용 조건과 책임 범위를 설명합니다.</p>
+          </a>
+          <a class="resource-card" href="contact.html">
+            <h3>문의하기</h3>
+            <p>문의 및 제휴 요청을 보낼 수 있습니다.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">
+          <span>Simple</span><strong>Barcode</strong>
+        </div>
+        <p>무료 바코드/QR 코드 생성 도구. 상업적 활용을 위한 고해상도 출력과 다양한 설정을 제공합니다.</p>
+      </div>
+      <div>
+        <h4>바로가기</h4>
+        <ul>
+          <li><a href="#generator">생성기</a></li>
+          <li><a href="#features">기능</a></li>
+          <li><a href="#guide">가이드</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>정책</h4>
+        <ul>
+          <li><a href="privacy.html">개인정보 처리방침</a></li>
+          <li><a href="terms.html">이용약관</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Simple Barcode Generator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
